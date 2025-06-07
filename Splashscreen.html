@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="Style.css">
+<script>
+    // Redirect after 4 seconds (4000 milliseconds)
+    window.onload = function () {
+  setTimeout(function () {
+    document.body.classList.add("fade-out"); // Add fade-out class
+    setTimeout(function () {
+      window.location.href = "homepage.html"; // Redirect after fade
+    }, 1000); // Match fade duration
+  }, 3000); // Start fade after 3s
+};
+</script>
+
+<body>
+    <div class="background">
+        <table>
+            <tr>
+                <td>
+                    <h>CLIMATE CHANGE</h>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Our mission is to raise awareness about the urgent threat of climate change and inspire
+                        individuals to take meaningful actions for a more sustainable future. By educating our
+                        audience on its causes, effects, and solutions, we aim to empower communities to reduce
+                        their carbon footprint and protect our planet for future generations.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="members">Members</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="members"><b> • Binura • Onila • Oneth • Vipura</b></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="center">
+                        <div class="ring"></div>
+                        <span>Directing...</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
