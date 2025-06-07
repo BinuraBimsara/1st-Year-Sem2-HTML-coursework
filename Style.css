@@ -151,7 +151,15 @@ span{
 }
 
 .custom-navbar {
-    background-color: rgb(0, 128, 0)
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1050;
+    transition: background-color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.059);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(3px);
 }
 
 #navlinks{
@@ -177,10 +185,20 @@ body {
     opacity: 0;
   }
 .card{
+    width: 200px;
+    height: 300px;
+    margin-top: 40px;
     background-color: rgba(0, 0, 0, 0.374);
     color: aliceblue;
     backdrop-filter: blur(10px);
     border-radius: 50px;
+    transition: background-color 0.5s, transform 0.5s;
+}
+.card:hover{
+    background-color: rgb(0, 0, 0);
+    transform: translateY(-10px);
+    transition: 0.5s;
+
 
 }
 .btn{
@@ -188,10 +206,31 @@ body {
     border-radius: 50px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 70px;
     width: fit-content;
 
 }
 .logo{
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
+}
+.card-img-top{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+.card-title{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+
+}
+
+#SDG{
+margin-top: 120px;
+}
+
+.img-fluid{
+    width: 150px;
 }
