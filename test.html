@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wind-Blown Leaves</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #f0fff0;
+      height: 100vh;
+    }
+
+    .leaf {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-image: url('https://www.bing.com/ck/a?!&&p=d5fee4c8879bcd4f2712729da70dffda30668dbb93f34c190959a3cfc36d0072JmltdHM9MTc0OTM0MDgwMA&ptn=3&ver=2&hsh=4&fclid=2c5f4bc5-0ac6-6cda-0529-5dc50b836d77&u=a1L2ltYWdlcy9zZWFyY2g_cT1sZWFmK3BuZyZpZD1CQkZCQzMwN0YyREZDNDhENzlBNUU2QTBCQzhBODBBOTVGNzREQjI5JkZPUk09SUFDRklS&ntb=1'); /* Transparent PNG leaf */
+      background-size: cover;
+      pointer-events: none;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  const leafCount = 20;
+  const leaves = [];
+
+  for (let i = 0; i < leafCount; i++) {
+    const leaf = document.createElement('div');
+    leaf.className = 'leaf';
+    leaf.style.top = `${Math.random() * window.innerHeight}px`;
+    leaf.style.left = `${Math.random() * window.innerWidth}px`;
+    document.body.appendChild(leaf);
+
+    leaves.push({
+      el: leaf,
+      x: parseFloat(leaf.style.left),
+      y: parseFloat(leaf.style.top),
+      vx: 0,
+      vy: 0,
+      driftOffset: Math.random() * 2 - 1, // add some side curve
+      speed: Math.random() * 0.5 + 0.5, // random speed
+    });
+  }
+
+  let windX = 0;
+  let windY = 0;
+  let lastX = null;
+  let lastY = null;
+
+  document.addEventListener('mousemove', (e) => {
+    if (lastX !== null && lastY !== null) {
+      windX = (e.clientX - lastX) * 0.1;
+      windY = (e.clientY - lastY) * 0.1;
+    }
+    lastX = e.clientX;
+    lastY = e.clientY;
+  });
+
+  function animate() {
+    leaves.forEach((leaf) => {
+      // Apply wind + randomness
+      leaf.vx += windX * 0.1 * leaf.speed;
+      leaf.vy += windY * 0.1 * leaf.speed;
+
+      // Slight curve/dance
+      leaf.vx += Math.sin(performance.now() * 0.001 + leaf.driftOffset) * 0.2;
+
+      // Damping
+      leaf.vx *= 0.95;
+      leaf.vy *= 0.95;
+
+      // Update position
+      leaf.x += leaf.vx;
+      leaf.y += leaf.vy;
+
+      // Wrap around
+      if (leaf.x > window.innerWidth) leaf.x = -40;
+      if (leaf.x < -40) leaf.x = window.innerWidth;
+      if (leaf.y > window.innerHeight) leaf.y = -40;
+      if (leaf.y < -40) leaf.y = window.innerHeight;
+
+      leaf.el.style.left = `${leaf.x}px`;
+      leaf.el.style.top = `${leaf.y}px`;
+    });
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script>
+
+</body>
+</html>

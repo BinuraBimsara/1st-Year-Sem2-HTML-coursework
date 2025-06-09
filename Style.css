@@ -1,12 +1,3 @@
-/* body{
-    background-image: url(Spalshscreen\ img.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    opacity: 0.35;
-} */
-
 * {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0px;
@@ -14,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* ===============SPLASHSCREEN=================== ===============SPLASHSCREEN=================== */
 .background {
     min-height: 100vh;
     display: flex;
@@ -92,7 +84,7 @@ p {
 @keyframes ring {
     0% {
         transform: rotate(0deg);
-        box-shadow: 1px 5px 2px #e65c00;
+        box-shadow: 1px 5px 2px #60e600;
     }
 
     50% {
@@ -102,7 +94,7 @@ p {
 
     100% {
         transform: rotate(360deg);
-        box-shadow: 1px 5px 2px #e65c00;
+        box-shadow: 1px 5px 2px #13e600;
     }
 }
 
@@ -126,6 +118,9 @@ span {
     animation: text 3s ease-in-out linear;
 }
 
+/* ===============SPLASHSCREEN=================== ===============SPLASHSCREEN=================== */
+
+/* ========================HOMEPAGE======================== ========================HOMEPAGE========================*/
 .background2 {
     min-height: 100vh;
     display: flex;
@@ -160,7 +155,7 @@ span {
     top: 0;
     z-index: 1050;
     transition: background-color 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.059);
+    background-color: rgba(0, 0, 0, 0);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(3px);
 }
@@ -168,7 +163,7 @@ span {
 #navlinks {
     font-family: Poppins;
     font-size: 20px;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 10px;
     margin-left: 20px;
     color: rgb(255, 255, 255);
@@ -177,7 +172,7 @@ span {
 
 #navlinks:hover {
     color: white#af3c3c;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     transition: 0.8s;
 }
 
@@ -190,7 +185,7 @@ body.fade-out {
     opacity: 0;
 }
 
-.card {
+#redirect {
     width: 200px;
     height: 300px;
     margin-top: 40px;
@@ -201,7 +196,7 @@ body.fade-out {
     transition: background-color 0.5s, transform 0.5s;
 }
 
-.card:hover {
+#redirect:hover {
     background-color: rgb(0, 0, 0);
     transform: translateY(-10px);
     transition: 0.5s;
@@ -210,6 +205,7 @@ body.fade-out {
 }
 
 .btn {
+    background-color: green;
     display: block;
     border-radius: 50px;
     margin-left: auto;
@@ -245,7 +241,7 @@ body.fade-out {
 }
 
 .img-fluid {
-    width: 200px;
+    width: 150px;
 }
 
 .card-body img {
@@ -254,3 +250,107 @@ body.fade-out {
     object-fit: cover;
     border-radius: 35px;
 }
+footer{
+background-color: rgba(255, 255, 255, 0.4);
+backdrop-filter: blur(8px);
+-webkit-backdrop-filter: blur(8px);
+border-top: 1px solid rgba(0, 0, 0, 0.1);
+font-weight: 500;
+font-size: 15px;
+}
+
+/* ========================HOMEPAGE======================== ========================HOMEPAGE========================*/
+
+
+
+/* ========================LINKED PAGES======================== ========================LINKED PAGES ========================*/
+.custom-navbar2 {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1050;
+    transition: background-color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+#navlinks2 {
+    font-family: Poppins;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.7s;
+}
+
+#navlinks2:hover {
+    background-color: rgb(255, 255, 255);
+    transition: 0.8s;
+}
+
+.linkedpages {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    background-image: url("https://cdn.discordapp.com/attachments/1310630927294271569/1380894437617700896/cleaned_upscaled_image.png?ex=684589a9&is=68443829&hm=b0f474e34c903a55772af1b383401ad1741d3d22c6638d50b4061eda1a499346&");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+main {
+    padding: 100px 30px 30px 30px;
+    max-width: 850px;
+    margin: auto;
+}
+.main2{
+    padding: 0 30px 0px 0px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+section {
+     background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 20px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+section p{
+    color: black;
+
+}
+.actions{
+    height: 310px;
+    width: 300px;
+}
+
+.centered-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.action-card{
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+.action-card ul{
+    text-align: left;
+
+}
+
+/* ========================CLIMATE CHANGE======================== ========================CLIMATE CHANGE========================*/
+
