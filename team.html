@@ -8,6 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <style>
         .team-member {
             text-align: center;
@@ -29,7 +34,7 @@
             transform: translateY(-10px);
         }
 
-        .member-info {
+        p {
             opacity: 0;
             color: white;
             position: relative;
@@ -37,7 +42,7 @@
             transition: 0.5s;
         }
 
-        .team-member:hover .member-info {
+        .team-member:hover p {
             transition: opacity 1s ease-in;
             opacity: 1;
         }
@@ -78,23 +83,24 @@
                         <a id="navlinks" class="nav-link" href="new2.html">Table</a>
                     </li>
                     <li class="nav-item">
-                        <a id="navlinks" class="nav-link" href="#">User profile</a>
+                        <a id="navlinks" class="nav-link" href="userProfile.html">User profile</a>
                     </li>
 
                     <li class="nav-item">
                         <a id="navlinks" class="nav-link" href="#">Sitemap</a>
                     </li>
                     <li class="nav-item">
-                        <a id="navlinks" class="nav-link" href="#">Team</a>
+                        <a id="navlinks" class="nav-link" href="team.html">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a id="navlinks" class="nav-link" href="#">Feedback</a>
+                        <a id="navlinks" class="nav-link" href="feedback.html">Feedback</a>
                     </li>
 
                 </ul>
             </div>
         </div>
     </nav>
+
     <div class="background2">
         <div class="container text-white py-5 " style="margin-top: 80px;" id="teambdy">
             <h2 class="text-center mb-5">Meet Our Team</h2>
@@ -129,13 +135,29 @@
                 </div>
             </div>
         </div>
-
     </div>
+<footer class="mt-5">
+  <div class="container py-4">
+    <div class="row text-white text-center text-md-start">
+      <div class="col-12 col-md-4 mb-2 mb-md-0">
+        <p class="mb-0">2025 Climate Awareness Initiative</p>
+      </div>
+      <div class="col-12 col-md-4 mb-2 mb-md-0 text-md-center">
+        <p class="mb-0">© 2025 Green Future Foundation. All rights reserved.</p>
+      </div>
+      <div class="col-12 col-md-4 text-md-end">
+        <p class="mb-0">Developed by: Binura | Onila | Oneth | Vipura</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

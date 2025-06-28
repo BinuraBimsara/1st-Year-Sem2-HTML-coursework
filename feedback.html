@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="linkedpages">
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="homepage.html" id="navlinks"><img class="logo"
+                    src="https://cdn-icons-png.flaticon.com/128/10735/10735495.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="navlinks" class="nav-link" aria-current="page" href="Splashscreen.html">SplashScreen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navlinks" class="nav-link" href="#">Volunteer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navlinks" class="nav-link" href="new2.html">Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navlinks" class="nav-link" href="userProfile.html">User profile</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a id="navlinks" class="nav-link" href="#">Sitemap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navlinks" class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navlinks" class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <main class="form-wrapper">
+            <div class="container text-white rounded " style="background-color: rgba(0, 0, 0, 0.6); max-width: 700px;">
+                <h1 class="mb-4 text-center p-3">Feedback Form</h1>
+                <form>
+                    <fieldset class="mb-3">
+                        <legend>Personal Details</legend>
+                        <div class="mb-3">
+                            <label for="fullname" class="form-label">Full Name:</label>
+                            <input type="text" class="form-control" id="fullname" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telephone Number:</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address:</label>
+                            <textarea class="form-control" id="address" rows="2"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="mb-3">
+                        <legend>Feedback Details</legend>
+                        <div class="mb-3">
+                            <label for="comment" class="form-label">Comment or Message:</label>
+                            <textarea class="form-control" id="comment" rows="4" maxlength="250"
+                                placeholder="Your feedback..."></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="topic" class="form-label">Topic:</label>
+                            <select id="topic" class="form-select">
+                                <option value="volunteer">Volunteering</option>
+                                <option value="website">Website Usability</option>
+                                <option value="content">Content Suggestions</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="interest" class="form-label">Areas of Interest:</label>
+                            <select id="interest" multiple class="form-select">
+                                <option>Climate</option>
+                                <option>Education</option>
+                                <option>Health</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="suggest" class="form-label">Suggest Improvements:</label>
+                            <input list="suggestions" class="form-control" id="suggest">
+                            <datalist id="suggestions">
+                                <option value="Add Calendar">
+                                <option value="Better Colors">
+                                <option value="More Interactivity">
+                            </datalist>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">How would you rate us?</label><br>
+                            ⭐ ⭐ ⭐ ⭐ ⭐
+                        </div>
+                        <div class="mb-3">
+                            <label for="datetime" class="form-label">Date & Time:</label>
+                            <input type="datetime-local" class="form-control" id="datetime">
+                        </div>
+                        <div class="mb-3">
+                            <label for="fileupload" class="form-label">Upload File:</label>
+                            <input type="file" class="form-control" id="fileupload">
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn btn-light w-25">Submit Feedback</button>
+                    <br>
+                </form>
+            </div>
+        </main>
+    </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+                crossorigin="anonymous"></script>
+</body
+
+</html>
