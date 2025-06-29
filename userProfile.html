@@ -115,22 +115,23 @@
     }
 
     .box2 {
-        background-color: #fccc6593;
+        background-color: #65fc9793;
         padding: 15px;
         border-radius: 10px;
-        width: auto;
+        width: 80%;
         box-sizing: border-box;
         margin: auto;
         margin-top: 10px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
-    .box2 h2{
+
+    .box2 h2 {
         text-align: center;
     }
 
     .availability-table {
         align-items: center;
-        width: 90%;
+        width: 100%;
         border-collapse: collapse;
         margin-top: 10px;
     }
@@ -143,7 +144,7 @@
     }
 
     .availability-table th {
-        background-color: #ffbc03;
+        background-color: #2dff03;
         color: white;
     }
 
@@ -157,13 +158,19 @@
     .contact textarea {
         align-items: center;
         width: 90%;
+        margin-bottom: 10px;
         padding: 10px;
-        margin: 10px 40px;
         border: 1px solid #ccc;
         border-radius: 5px;
     }
 
+    .contact form {
+        text-align: center;
+
+    }
+
     .contact button {
+        margin-top: 10px;
         width: 100%;
         background: #ffbc03;
         color: white;
@@ -174,7 +181,21 @@
     }
 
     .contact button:hover {
+        background: #2dff03;
+    }
+
+    .reset button {
+        width: 100%;
         background: #ffbc03;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .reset button:hover {
+        background: #2dff03;
     }
 </style>
 
@@ -182,7 +203,7 @@
     <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="homepage.html" id="navlinks"><img class="logo"
-                    src="https://cdn-icons-png.flaticon.com/128/10735/10735495.png"></a>
+                    src="https://cdn-icons-png.flaticon.com/128/10735/10735495.png">Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
@@ -193,7 +214,7 @@
                         <a id="navlinks" class="nav-link" aria-current="page" href="Splashscreen.html">SplashScreen</a>
                     </li>
                     <li class="nav-item">
-                        <a id="navlinks" class="nav-link" href="#">Volunteer</a>
+                        <a id="navlinks" class="nav-link" href="volunteer.html">Volunteer</a>
                     </li>
                     <li class="nav-item">
                         <a id="navlinks" class="nav-link" href="new2.html">Table</a>
@@ -219,10 +240,9 @@
 
     <div class="background2">
         <div class="container-fluid1">
-
             <div class="container-fluid2" id="content">
                 <div class="left-section">
-                    <img src="Img/img.jpg" alt="Profile Picture">
+                    <img src="Imgs/img.jpg" alt="Profile Picture">
                     <p class="quote">"If there's a hole, there's a goal."</p>
                     <div class="info">
                         <p><strong>Name:</strong> Binura Narayana</p>
@@ -318,7 +338,9 @@
                     <input type="text" placeholder="Name" required>
                     <input type="email" placeholder="Email" required>
                     <textarea placeholder="Message" required></textarea>
+                    <input type="tel" placeholder="Telephone Number">
                     <button type="submit">Send</button>
+                    <button type="reset">Reset</button>
                 </form>
             </div>
 

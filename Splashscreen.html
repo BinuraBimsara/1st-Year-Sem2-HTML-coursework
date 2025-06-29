@@ -11,7 +11,122 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
+
+<style>
+    .background {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.912);
+    }
+
+    .background::before {
+        content: ' ';
+        background-image: url("https://www.bdp-verband.de/fileadmin/_processed_/3/f/csm_hartono-creative-studio-ziJaACfCjc8-unsplash_8995c15b57.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.2;
+        filter: blur(2px);
+
+    }
+
+    table {
+        text-align: center;
+        margin: 5%;
+        margin-top: 1px;
+    }
+
+    h {
+        line-height: 1;
+        letter-spacing: -2px;
+        font-weight: 600;
+        font-size: 120px;
+        font-family: Poppins;
+        color: white;
+    }
+
+    p {
+        max-width: 1000px;
+        margin: 10px auto 30px;
+        font-size: 18px;
+        line-height: 1.6;
+        color: white;
+        font-weight: normal;
+    }
+
+    .members {
+        margin-top: 5px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .center {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        min-height: 25vh;
+    }
+
+    .ring {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        animation: ring 2s linear infinite;
+    }
+
+    @keyframes ring {
+        0% {
+            transform: rotate(0deg);
+            box-shadow: 1px 5px 2px #60e600;
+        }
+
+        50% {
+            transform: rotate(180deg);
+            box-shadow: 1px 5px 2px #18b7ff;
+        }
+
+        100% {
+            transform: rotate(360deg);
+            box-shadow: 1px 5px 2px #13e600;
+        }
+    }
+
+    .ring::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+    }
+
+    span {
+        color: #737373;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 200px;
+        animation: text 3s ease-in-out linear;
+    }
+</style>
+
 <link rel="stylesheet" href="Style.css">
+
 <script>
     // Redirect after 4 seconds (4000 milliseconds)
     window.onload = function () {
@@ -59,15 +174,6 @@
                 </td>
             </tr>
         </table>
-        <footer class="mt-5 py-3 ">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-center flex-wrap">
-                    <p class="mb-0 text-start">2025 Climate Awareness Initiative.</p>
-                    <p class="mb-0 text-center flex-fill">© 2025 NIGGAS CAFE. All rights reserved.</p>
-                    <p class="mb-0 text-end">Developed by: Binura | Onila | Oneth | Vipura</p>
-                </div>
-            </div>
-        </footer>
     </div>
 
 

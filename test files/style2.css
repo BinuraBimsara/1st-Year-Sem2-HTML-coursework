@@ -1,10 +1,13 @@
 * {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: Poppins;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+
+
+/* ========================HOMEPAGE======================== ========================HOMEPAGE========================*/
 .background2 {
     min-height: 100vh;
     display: flex;
@@ -59,11 +62,136 @@
     background-color: rgb(0, 0, 0);
     transition: 0.8s;
 }
-
 .logo {
     height: 60px;
     width: 60px;
 }
 
 
+body {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+#redirect {
+    width: 200px;
+    height: 300px;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.374);
+    color: aliceblue;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+#redirect:hover {
+    background-color: rgb(0, 0, 0);
+    transform: translateY(-10px);
+    transition: 0.5s;
+
+
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
 /* ========================HOMEPAGE======================== ========================HOMEPAGE========================*/
+
+
+
+/* ========================LINKED PAGES======================== ========================LINKED PAGES ========================*/
+.custom-navbar2 {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1050;
+    transition: background-color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+#navlinks2 {
+    font-family: Poppins;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.7s;
+}
+
+#navlinks2:hover {
+    background-color: rgb(255, 255, 255);
+    transition: 0.8s;
+}
+
+.linkedpages {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    background-image: url("https://www.bdp-verband.de/fileadmin/_processed_/3/f/csm_hartono-creative-studio-ziJaACfCjc8-unsplash_8995c15b57.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+main {
+    padding: 100px 30px 30px 30px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.main2 {
+    padding: 0 30px 0px 0px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 20px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+section p {
+    color: black;
+
+}
+
+
+.centered-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+    .btn {
+    background-color: green;
+    display: block;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: fit-content;
+
+}
